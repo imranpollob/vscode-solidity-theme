@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
 		<Metadata>
-			<Identity Language="en-US" Id="vscode-solidity-language" Version="0.0.7" Publisher="tintinweb" />
+			<Identity Language="en-US" Id="vscode-solidity-language-enhanced" Version="1.0.0" Publisher="imranpollob" />
 			<DisplayName>Solidity Language &amp; Themes (only)</DisplayName>
 			<Description xml:space="preserve">Solidity Language Support, Syntax Highlighting, and Themes</Description>
 			<Tags>solidity,ethereum,blockchain,security,audit,review,developer,solidity security,solidity audit,language,theme,color-theme,__ext_sol,__web_extension</Tags>
@@ -16,11 +16,11 @@
 				<Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
 				
 				
-				<Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/tintinweb/vscode-solidity-language.git" />
-				<Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/tintinweb/vscode-solidity-language.git" />
-				<Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/tintinweb/vscode-solidity-language.git" />
-				<Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/tintinweb/vscode-solidity-language/issues" />
-				<Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/tintinweb/vscode-solidity-language#readme" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/imranpollob/vscode-solidity-theme.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/imranpollob/vscode-solidity-theme.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/imranpollob/vscode-solidity-theme.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/imranpollob/vscode-solidity-theme/issues" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/imranpollob/vscode-solidity-theme#readme" />
 				
 				
 				<Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />

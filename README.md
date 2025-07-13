@@ -79,7 +79,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - Based on the original work by [tintinweb](https://github.com/tintinweb/vscode-solidity-language)
-- Enhanced with override function highlighting and improved themes
+- Enhanced with override function highlighting and improved themes by [imranpollob](https://github.com/imranpollob/vscode-solidity-theme)
 
 ## Changelog
 
