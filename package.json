@@ -2,7 +2,7 @@
 	"name": "vscode-solidity-language-enhanced",
 	"displayName": "Solidity Theme",
 	"description": "Enhanced Solidity Theme for Visual Studio Code with improved syntax highlighting and language support.",
-	"publisher": "Imran Pollob",
+	"publisher": "imranpollob",
 	"icon": "images/icon.png",
 	"preview": true,
 	"version": "1.0.0",
