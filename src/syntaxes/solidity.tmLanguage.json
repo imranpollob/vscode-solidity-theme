@@ -2,8 +2,8 @@
     "fileTypes": [
         "sol"
     ],
-	"name": "SoliditySec",
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "SoliditySec",
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
     "patterns": [
         {
             "include": "#natspec"
@@ -75,7 +75,9 @@
         },
         "natspec-tags": {
             "patterns": [
-                { "include": "#comment-todo"},
+                {
+                    "include": "#comment-todo"
+                },
                 {
                     "include": "#natspec-tag-title"
                 },
@@ -138,7 +140,6 @@
             ]
         },
         "comment-line": {
-            
             "begin": "(?<!tp:)//",
             "end": "$",
             "name": "comment.line.solidity",
@@ -338,7 +339,6 @@
         },
         "global-variables": {
             "patterns": [
-                
                 {
                     "match": "\\b(this)\\b",
                     "name": "variable.language.this.solidity"
@@ -404,7 +404,9 @@
                 {
                     "include": "#declaration-library"
                 },
-                {  "include": "#declaration-visibility"},
+                {
+                    "include": "#declaration-visibility"
+                },
                 {
                     "include": "#declaration-struct"
                 },
@@ -423,7 +425,6 @@
                 {
                     "include": "#declaration-function"
                 },
-                
                 {
                     "include": "#declaration-constructor"
                 },
@@ -526,7 +527,6 @@
                 {
                     "include": "#method-head"
                 }
-                
             ]
         },
         "declaration-function-fallback": {
@@ -538,6 +538,38 @@
             "name": "storage.type.function.receive.solidity"
         },
         "declaration-function": {
+            "patterns": [
+                {
+                    "include": "#declaration-function-override"
+                },
+                {
+                    "include": "#declaration-function-regular"
+                }
+            ]
+        },
+        "declaration-function-override": {
+            "begin": "\\b(function)\\s+([A-Za-z_]\\w*)\\b(?=.*\\boverride\\b)",
+            "beginCaptures": {
+                "1": {
+                    "name": "storage.type.function.solidity"
+                },
+                "2": {
+                    "name": "entity.name.function.override.solidity"
+                }
+            },
+            "end": "({)",
+            "endCaptures": {
+                "1": {
+                    "name": "punctuation.block.solidity"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "#method-head"
+                }
+            ]
+        },
+        "declaration-function-regular": {
             "begin": "\\b(function)\\s+([A-Za-z_]\\w*)\\b",
             "beginCaptures": {
                 "1": {
@@ -557,7 +589,6 @@
                 {
                     "include": "#method-head"
                 }
-                
             ]
         },
         "declaration-modifier": {
@@ -678,9 +709,9 @@
             ]
         },
         "comment-todo": {
-			"match": "(?i)\\b(FIXME|TODO|CHANGED|XXX|IDEA|HACK|NOTE|REVIEW|NB|BUG|QUESTION|COMBAK|TEMP|SUPPRESS|LINT|\\w+-disable|\\w+-suppress)\\b(?-i)",
-			"name": "keyword.comment.todo.solidity"
-		}
+            "match": "(?i)\\b(FIXME|TODO|CHANGED|XXX|IDEA|HACK|NOTE|REVIEW|NB|BUG|QUESTION|COMBAK|TEMP|SUPPRESS|LINT|\\w+-disable|\\w+-suppress)\\b(?-i)",
+            "name": "keyword.comment.todo.solidity"
+        }
     },
     "scopeName": "source.solidity.security",
     "uuid": "ad87d2cd-8575-4afe-984e-9421a3788933"
