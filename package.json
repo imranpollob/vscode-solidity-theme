@@ -25,7 +25,8 @@
 		"highlighting"
 	],
 	"categories": [
-		"Programming Languages"
+		"Programming Languages",
+		"Themes"
 	],
 	"bugs": {
 		"url": "https://github.com/imranpollob/vscode-solidity-theme/issues"
